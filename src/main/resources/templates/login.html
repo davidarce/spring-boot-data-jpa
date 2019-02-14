@@ -12,17 +12,17 @@
             <form th:action="@{/login}" method="post">
 
                 <div class="form-group col-sm-6">
-                    <input id="username" type="text" name="username" class="form-control" placeholder="UserName"
+                    <input id="username" type="text" name="username" class="form-control" th:placeholder="#{text.login.username}"
                            autofocus required/>
                 </div>
 
                 <div class="form-group col-sm-6">
-                    <input id="password" type="password" name="password" class="form-control" placeholder="Password"
+                    <input id="password" type="password" name="password" class="form-control" th:placeholder="#{text.login.password}"
                            required/>
                 </div>
 
                 <div class="form-group col-sm-6">
-                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign In"/>
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" th:value="#{text.login.boton}"/>
                 </div>
 
             </form>
